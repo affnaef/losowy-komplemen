@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Losowy Uroczy Komplement</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+
+    <p id="compliment"></p>
+
+    <script>
+        // Tablica z uroczymi komplementami z emotkami
+        const compliments = [
+            "Jesteś niesamowicie uroczy! 😊",
+            "Twoja uśmiechnięta twarz rozjaśnia dzień! 😄",
+            "Cieszę się, że jesteś tutaj! 🌈",
+            "Twój urok jest niepowtarzalny! ✨",
+            "Jesteś jak słońce w moim życiu! 🌞",
+            "Twoja dobroć jest niesamowita! 🌼",
+            "Masz serce z solidnego złota! 💖",
+            "Świat jest lepszy z Tobą! 🌍",
+            "Jesteś jak kawa - zawsze dodajesz energii! ☕",
+            "Twoja pozytywna energia jest zaraźliwa! 🌟",
+            "Twój uśmiech to najpiękniejsza ozdoba! 😁",
+            "Dziękuję, że jesteś taki/a wspaniały/a! 🙌",
+            "Jesteś kwiatem w ogrodzie życia! 🌺",
+            "Twój entuzjazm jest inspirujący! 🚀",
+            "Jesteś jak gwiazda na niebie! ⭐",
+            "Twoje marzenia są równie piękne jak Ty! 🌌",
+            "Jesteś szefem/a pozytywnej energii! 👏",
+            "Twoje dobre serce robi różnicę! ❤️",
+            "Jesteś jak książka - nie mogę się doczekać, aby odkryć więcej! 📖",
+            "Twój uśmiech potrafi zdziałać cuda! ✨",
+            // Dodaj kolejne komplementy z emotkami według uznania
+            "Masz wyjątkowy talent do rozśmieszania innych! 😂",
+            "Twoje pomysły są zawsze oryginalne! 🌈",
+            "Jesteś jak gwiazda rocka w świecie swojej własnej przygody! 🎸",
+            "Twój urok przyciąga pozytywne wydarzenia! 🌟",
+            "Jesteś jak kolorowy obraz w szaro-białym świecie! 🎨",
+            "Twoja obecność dodaje blasku każdemu miejscu! 💫",
+            "Masz zdolność do zaskakiwania i inspirowania innych! 🌈",
+            "Twój uśmiech jest lekarstwem na smutek! 😊",
+            "Jesteś jak kawałek czekolady - zawsze poprawiasz nastrój! 🍫",
+            "Twoje marzenia są jak gwiazdy, których dotykasz palcami! 🌠",
+            "Jesteś jak najpiękniejszy kwiat w ogrodzie życia! 🌸",
+            "Twój entuzjazm jest jak iskra, która zapala serca innych! 🔥",
+            "Jesteś jak superbohater, gotowy/a na ratowanie dnia! 🦸‍♂️",
+            "Twoja kreatywność jest jak niekończący się strumień! 🎨",
+            "Jesteś jak melodia, która sprawia, że świat staje się piękniejszy! 🎶",
+            "Twój optymizm jest jak promień słońca w deszczowy dzień! ☀️",
+            "Jesteś jak księżyc, który świeci w ciemności nocy! 🌙",
+            "Twoja determinacja jest godna podziwu! 💪",
+            "Jesteś jak skarb ukryty w głębi serca! 💎",
+            "Twój śmiech jest jak magiczny eliksir! 😄",
+            "Jesteś jak gwiazda morska, która przyciąga szczęście! ⭐🌈",
+            "Twoja dobroć jest jak wiara w lepsze jutro! 🌟",
+            "Jesteś jak inspirujący cytat, który dodaje otuchy! 📜",
+        ];
+
+        // Pobierz element HTML, gdzie ma być wyświetlony komplement
+        const complimentElement = document.getElementById("compliment");
+
+        // Losowy indeks z tablicy komplementów
+        const randomIndex = Math.floor(Math.random() * compliments.length);
+
+        // Ustaw tekst komplementu
+        complimentElement.textContent = compliments[randomIndex];
+    </script>
+
+</body>
+</html>
